@@ -5,7 +5,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "lmos_openai_types"
+name = "lmos_serviceinfo_types"
 version = "0.1.0"
 description = "A Python package for types related to OpenAI"
 license = { text = "apache2" }
@@ -16,15 +16,15 @@ dependencies = [
 ]
 
 [project.urls]
-homepage = "https://github.com/LMOS-IO/openai-openapi"
-repository = "https://github.com/LMOS-IO/openai-openapi"
+homepage = "https://github.com/LMOS-IO/serviceinfo-typegen"
+repository = "https://github.com/LMOS-IO/serviceinfo-typegen"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["lmos_openai_types"]
+include = ["lmos_serviceinfo_types"]
 
 [tool.setuptools]
-package-data = { "lmos_openai_types" = ["py.typed"] }
+package-data = { "lmos_serviceinfo_types" = ["py.typed"] }
 '''.strip()
 
 def generate_toml():

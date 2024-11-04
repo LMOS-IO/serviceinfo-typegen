@@ -17,13 +17,13 @@ warnings.simplefilter("ignore", ReusedAnchorWarning)
 # convert the yaml into json
 yaml = YAML(typ="safe", pure=True)
 
-with open("openapi.yaml") as stream:
+with open("openapi.json") as stream:
     data = yaml.load(stream)
 
 openapi_json = json.dumps(data)
 
 # create a path for the new package
-release_pkg_dir = Path('lmos_openai_types/')
+release_pkg_dir = Path('lmos_serviceinfo_types/')
 release_pkg_dir.mkdir(parents=True, exist_ok=True)
 
 # create types
